@@ -71,10 +71,10 @@ const idInvalidCardCompanies = invalidNumbers => {
             console.log('Company not found')
         }
     }
-    return companiesId.reduce((acc, curr) => {
-        if (!acc.includes(curr))
-            acc.push(curr);
-        return acc;
+    return companiesId.reduce((accumulator, currentValue) => {
+        if (!accumulator.includes(currentValue))
+            accumulator.push(currentValue);
+        return accumulator;
     }, [])
 }
 
